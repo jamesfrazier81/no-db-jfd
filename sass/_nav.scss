@@ -1,0 +1,46 @@
+#navbar {
+    background-color: rgba($color-blue, 0.95);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    .logo {
+        width: 200px;
+        padding: 10px 20px;
+        float: left;
+    }
+
+    .navlinks {
+        float: right;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0;
+                padding: 0;
+
+                a {
+                	display: inline-block;
+                    line-height: 55px;
+                    padding: 10px 20px;
+                    text-align: center;
+                    color: white;
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    background-color: rgba(black, 0.15);
+                }
+            }
+        }
+    }
+}

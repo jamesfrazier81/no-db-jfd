@@ -1,0 +1,58 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: $font-sans;
+	font-size: 16px;
+	color: $color-gray;
+}
+
+h1 {
+	font-family: $font-serif;
+	font-size: 4rem;
+	font-weight: $font-light;
+}
+
+h2 {
+	font-family: $font-serif;
+	font-size: 3rem;
+	font-weight: $font-light;
+}
+
+h3 {
+	font-family: $font-serif;
+	font-size: 2rem;
+	font-weight: $font-light;
+}
+
+h4 {
+	font-family: $font-serif;
+	font-size: 1.25rem;
+	font-weight: $font-bold;
+}
+
+p {
+	font-size: 1rem;
+
+	a {
+		text-decoration: none;
+		font-weight: $font-bold;
+	}
+}
+
+// Buttons
+.btn {
+	display: inline-block;
+	padding: 8px 20px;
+	font-weight: $font-bold;
+	text-decoration: none;
+
+	&.btn-white {
+		background-color: white;
+		color: $color-blue;
+	}
+
+	&.btn-blue {
+		background-color: $color-blue;
+		color: white;
+	}
+}
