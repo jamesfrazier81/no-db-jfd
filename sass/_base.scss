@@ -4,11 +4,12 @@ html, body {
 	font-family: $font-sans;
 	font-size: 16px;
 	color: $color-gray;
+	font-smoothing: antialiased;
 }
 
 h1 {
 	font-family: $font-serif;
-	font-size: 4rem;
+	font-size: 3.5rem;
 	font-weight: $font-light;
 }
 

@@ -4,11 +4,12 @@ html, body {
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  color: #333333; }
+  color: #333333;
+  font-smoothing: antialiased; }
 
 h1 {
   font-family: "Roboto Slab", serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 100; }
 
 h2 {
@@ -64,16 +65,43 @@ p {
     width: 90%;
     height: 100vh; }
 
+.home .container-wrap.first {
+  background-image: url(/img/dist/james-in-snow.jpg);
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; }
+  .home .container-wrap.first .container {
+    position: relative; }
+    .home .container-wrap.first .container .caption-box {
+      position: absolute;
+      max-width: 30%;
+      bottom: 10%;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px; }
+      .home .container-wrap.first .container .caption-box h1 {
+        color: white;
+        margin: 0; }
+      .home .container-wrap.first .container .caption-box p {
+        color: white; }
+
+.home .container-wrap.second {
+  background-color: #007fbe; }
+
 #navbar {
   background-color: rgba(0, 127, 190, 0.95);
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  border-top: 1px solid white; }
   #navbar .logo {
     width: 200px;
     padding: 10px 20px;
     float: left; }
+    #navbar .logo a {
+      display: block; }
   #navbar .navlinks {
     float: right; }
     #navbar .navlinks ul {
@@ -105,7 +133,7 @@ p {
         padding: 0; }
         #navbar .navlinks ul li a {
           display: inline-block;
-          line-height: 55px;
+          line-height: 45px;
           padding: 10px 20px;
           text-align: center;
           color: white;

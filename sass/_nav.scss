@@ -4,11 +4,16 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    border-top: 1px solid white;
 
     .logo {
         width: 200px;
         padding: 10px 20px;
         float: left;
+
+        a {
+            display: block;
+        }
     }
 
     .navlinks {
@@ -30,7 +35,7 @@
 
                 a {
                 	display: inline-block;
-                    line-height: 55px;
+                    line-height: 45px;
                     padding: 10px 20px;
                     text-align: center;
                     color: white;

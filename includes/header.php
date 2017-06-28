@@ -12,4 +12,3 @@
 	<script src="js/dist/scripts.js"></script>
 </head>
 <body id="top">
-	<div class="body-wrap">
