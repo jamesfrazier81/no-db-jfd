@@ -1,34 +1,5 @@
 .home {
     .container-wrap {
-        &.subnav {
-            z-index: 2;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            background-color: rgba(black, 0.75);
-
-            ul {
-                display: flex;
-                align-items: center;
-                align-content: center;
-                justify-content: center;
-                width: 100%;
-                list-style: none;
-                margin: 0;
-                padding: 0;
-
-                li {
-                    a {
-                        display: inline-block;
-                        padding: 8px 20px;
-                        font-size: 0.75rem;
-                        color: white;
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-
         &.first {
             z-index: 1;
             background-image: url(/img/dist/james-in-snow.jpg);
@@ -64,6 +35,9 @@
 
         &.second, &.third, &.fourth {
             background-color: $color-blue;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
 
             .container {
                 display: flex;
@@ -107,7 +81,7 @@
 
                     li {
                         width: 50%;
-                        padding: 5%;
+                        padding: 2% 5%;
 
                         &:first-child {
                             text-align: right;
@@ -121,14 +95,25 @@
                             color: white;
                             font-family: $font-awesome;
                             font-size: 7rem;
+                            transition: all 0.3s ease-in-out;
+
+                            &:hover {
+                                transform: translate(0, -10px);
+                            }
                         }
                     }
                 }
             }
         }
 
+        &.second {
+            background-color: $color-blue;
+            @include img-top-left;
+        }
+
         &.third {
-            background-color: white;
+            background-color: $color-blue;
+            @include img-bottom-left;
 
             .container {
                 small {
@@ -156,13 +141,19 @@
                     img, svg {
                         max-width: 250px;
                         height: auto;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            transform: translate(0, -10px);
+                        }
                     }
                 }
             }
         }
 
         &.fourth {
-            background-color: $color-gray;
+            background-color: $color-blue;
+            @include img-top-left;
         }
     }
 }

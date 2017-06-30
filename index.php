@@ -24,8 +24,8 @@
 			<h2>Choose your CMS</h2>
 			<p>The front-face of your brand. This is one of the first things people view for when researching your product types or services. Make a good first impression.</p>
 			<ul>
-				<li><a href="/services/#wordpress"><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
-				<li><a href="/services/#static"><i class="fa fa-html5" aria-hidden="true"></i></a></li>
+				<li><a href="/services.php/#web-wordpress"><i class="fa fa-wordpress" aria-hidden="true"></i></a></li>
+				<li><a href="/services.php/#web-html"><i class="fa fa-html5" aria-hidden="true"></i></a></li>
 			</ul>
 		</div>
 	</div>

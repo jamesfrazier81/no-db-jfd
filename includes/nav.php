@@ -5,10 +5,10 @@
 	</div>	
 	<div class="navlinks">
 		<ul>
-			<li><a href="/services">Services</a></li>
-			<li><a href="/about">About</a></li>
-			<li><a href="/clients">Clients</a></li>
-			<li><a href="/contact">Contact</a></li>
+			<li><a href="/services.php">Services</a></li>
+			<li><a href="/about.php">About</a></li>
+			<li><a href="/work.php">Work</a></li>
+			<li><a href="/contact.php">Contact</a></li>
 		</ul>
 	</div>	
 </div>

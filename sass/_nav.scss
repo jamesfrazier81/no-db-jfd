@@ -34,7 +34,7 @@
                 padding: 0;
 
                 a {
-                	display: inline-block;
+                    display: inline-block;
                     line-height: 45px;
                     padding: 10px 20px;
                     text-align: center;
@@ -44,6 +44,38 @@
 
                 &:hover {
                     background-color: rgba(black, 0.15);
+                }
+            }
+        }
+    }
+}
+
+// Subnav
+.container-wrap {
+    &.subnav {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: rgba(black, 0.75);
+
+        ul {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            width: 100%;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                a {
+                    display: inline-block;
+                    padding: 8px 20px;
+                    font-size: 0.75rem;
+                    color: white;
+                    text-decoration: none;
                 }
             }
         }
