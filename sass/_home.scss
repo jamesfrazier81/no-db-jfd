@@ -1,0 +1,194 @@
+.home {
+    .container-wrap {
+        &.subnav {
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: rgba(black, 0.75);
+
+            ul {
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                width: 100%;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    a {
+                        display: inline-block;
+                        padding: 8px 20px;
+                        font-size: 0.75rem;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        &.first {
+            z-index: 1;
+            background-image: url(/img/dist/james-in-snow.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+
+            // filter: contrast(200%);
+
+            .container {
+                position: relative;
+
+                .caption-box {
+                    display: none;
+                    position: absolute;
+                    max-width: 30%;
+                    bottom: 43%;
+                    right: 0;
+                    background-color: rgba(black, 0.5);
+                    padding: 20px;
+
+                    h1 {
+                        color: white;
+                        margin: 0;
+                    }
+
+                    p {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        &.second, &.third, &.fourth {
+            background-color: $color-blue;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+
+                small {
+                    color: white;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    padding: 6px 15px;
+                    border: 2px solid white;
+                    letter-spacing: 2px;
+                }
+
+                h2 {
+                    color: white;
+                    text-align: center;
+                    margin: 10px 0 20px 0;
+                }
+
+                p {
+                    color: white;
+                    text-align: center;
+                    display: block;
+                    max-width: $media-tablet;
+                }
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+                    width: 100%;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        width: 50%;
+                        padding: 5%;
+
+                        &:first-child {
+                            text-align: right;
+                        }
+
+                        &:last-child {
+                            text-align: left;
+                        }
+
+                        .fa {
+                            color: white;
+                            font-family: $font-awesome;
+                            font-size: 7rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.third {
+            background-color: white;
+
+            .container {
+                small {
+                    color: black;
+                    border: 2px solid black;
+                }
+
+                h2 {
+                    color: black;
+                }
+
+                p {
+                    color: black;
+                }
+
+                ul li {
+                    &:first-child {
+                        text-align: right;
+                    }
+
+                    &:last-child {
+                        text-align: left;
+                    }
+
+                    img, svg {
+                        max-width: 250px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        &.fourth {
+            background-color: $color-gray;
+        }
+    }
+}
+
+@media screen and (max-width: $media-desktop-sm) {
+    .home .container-wrap {
+        &.first {
+            .container {
+                .caption-box {
+                    position: absolute;
+                    max-width: 100%;
+                    bottom: 100px;
+                    right: 0;
+                    background-color: rgba(black, 0.5);
+                    padding: 20px;
+
+                    h1 {
+                        color: white;
+                        margin: 0;
+                    }
+
+                    p {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

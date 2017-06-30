@@ -2,20 +2,20 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-family: $font-sans;
-	font-size: 16px;
+	font-size: 18px;
 	color: $color-gray;
 	font-smoothing: antialiased;
 }
 
 h1 {
 	font-family: $font-serif;
-	font-size: 3.5rem;
+	font-size: 3rem;
 	font-weight: $font-light;
 }
 
 h2 {
 	font-family: $font-serif;
-	font-size: 3rem;
+	font-size: 2.75rem;
 	font-weight: $font-light;
 }
 
@@ -33,6 +33,7 @@ h4 {
 
 p {
 	font-size: 1rem;
+	line-height: 1.75rem;
 
 	a {
 		text-decoration: none;
@@ -47,6 +48,10 @@ p {
 	font-weight: $font-bold;
 	text-decoration: none;
 
+	.fa {
+		margin-left: 5px;
+	}
+
 	&.btn-white {
 		background-color: white;
 		color: $color-blue;
@@ -55,5 +60,11 @@ p {
 	&.btn-blue {
 		background-color: $color-blue;
 		color: white;
+	}
+}
+
+@media screen and (max-width: $media-desktop-sm) {
+	h1 {
+		font-size: 2.5rem;
 	}
 }

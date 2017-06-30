@@ -3,18 +3,18 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #333333;
   font-smoothing: antialiased; }
 
 h1 {
   font-family: "Roboto Slab", serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 100; }
 
 h2 {
   font-family: "Roboto Slab", serif;
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: 100; }
 
 h3 {
@@ -28,7 +28,8 @@ h4 {
   font-weight: 700; }
 
 p {
-  font-size: 1rem; }
+  font-size: 1rem;
+  line-height: 1.75rem; }
   p a {
     text-decoration: none;
     font-weight: 700; }
@@ -38,12 +39,178 @@ p {
   padding: 8px 20px;
   font-weight: 700;
   text-decoration: none; }
+  .btn .fa {
+    margin-left: 5px; }
   .btn.btn-white {
     background-color: white;
     color: #007fbe; }
   .btn.btn-blue {
     background-color: #007fbe;
     color: white; }
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem; } }
+
+.home .container-wrap.subnav {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75); }
+  .home .container-wrap.subnav ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .home .container-wrap.subnav ul li a {
+      display: inline-block;
+      padding: 8px 20px;
+      font-size: 0.75rem;
+      color: white;
+      text-decoration: none; }
+
+.home .container-wrap.first {
+  z-index: 1;
+  background-image: url(/img/dist/james-in-snow.jpg);
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; }
+  .home .container-wrap.first .container {
+    position: relative; }
+    .home .container-wrap.first .container .caption-box {
+      display: none;
+      position: absolute;
+      max-width: 30%;
+      bottom: 43%;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px; }
+      .home .container-wrap.first .container .caption-box h1 {
+        color: white;
+        margin: 0; }
+      .home .container-wrap.first .container .caption-box p {
+        color: white; }
+
+.home .container-wrap.second, .home .container-wrap.third, .home .container-wrap.fourth {
+  background-color: #007fbe; }
+  .home .container-wrap.second .container, .home .container-wrap.third .container, .home .container-wrap.fourth .container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .home .container-wrap.second .container small, .home .container-wrap.third .container small, .home .container-wrap.fourth .container small {
+      color: white;
+      font-weight: 300;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 6px 15px;
+      border: 2px solid white;
+      letter-spacing: 2px; }
+    .home .container-wrap.second .container h2, .home .container-wrap.third .container h2, .home .container-wrap.fourth .container h2 {
+      color: white;
+      text-align: center;
+      margin: 10px 0 20px 0; }
+    .home .container-wrap.second .container p, .home .container-wrap.third .container p, .home .container-wrap.fourth .container p {
+      color: white;
+      text-align: center;
+      display: block;
+      max-width: 768px; }
+    .home .container-wrap.second .container ul, .home .container-wrap.third .container ul, .home .container-wrap.fourth .container ul {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 100%;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .home .container-wrap.second .container ul li, .home .container-wrap.third .container ul li, .home .container-wrap.fourth .container ul li {
+        width: 50%;
+        padding: 5%; }
+        .home .container-wrap.second .container ul li:first-child, .home .container-wrap.third .container ul li:first-child, .home .container-wrap.fourth .container ul li:first-child {
+          text-align: right; }
+        .home .container-wrap.second .container ul li:last-child, .home .container-wrap.third .container ul li:last-child, .home .container-wrap.fourth .container ul li:last-child {
+          text-align: left; }
+        .home .container-wrap.second .container ul li .fa, .home .container-wrap.third .container ul li .fa, .home .container-wrap.fourth .container ul li .fa {
+          color: white;
+          font-family: FontAwesome;
+          font-size: 7rem; }
+
+.home .container-wrap.third {
+  background-color: white; }
+  .home .container-wrap.third .container small {
+    color: black;
+    border: 2px solid black; }
+  .home .container-wrap.third .container h2 {
+    color: black; }
+  .home .container-wrap.third .container p {
+    color: black; }
+  .home .container-wrap.third .container ul li:first-child {
+    text-align: right; }
+  .home .container-wrap.third .container ul li:last-child {
+    text-align: left; }
+  .home .container-wrap.third .container ul li img, .home .container-wrap.third .container ul li svg {
+    max-width: 250px;
+    height: auto; }
+
+.home .container-wrap.fourth {
+  background-color: #333333; }
+
+@media screen and (max-width: 1024px) {
+  .home .container-wrap.first .container .caption-box {
+    position: absolute;
+    max-width: 100%;
+    bottom: 100px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px; }
+    .home .container-wrap.first .container .caption-box h1 {
+      color: white;
+      margin: 0; }
+    .home .container-wrap.first .container .caption-box p {
+      color: white; } }
 
 .body-wrap .container-wrap {
   width: 100%;
@@ -64,30 +231,6 @@ p {
   .body-wrap .container-wrap .container {
     width: 90%;
     height: 100vh; }
-
-.home .container-wrap.first {
-  background-image: url(/img/dist/james-in-snow.jpg);
-  -moz-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center; }
-  .home .container-wrap.first .container {
-    position: relative; }
-    .home .container-wrap.first .container .caption-box {
-      position: absolute;
-      max-width: 30%;
-      bottom: 10%;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px; }
-      .home .container-wrap.first .container .caption-box h1 {
-        color: white;
-        margin: 0; }
-      .home .container-wrap.first .container .caption-box p {
-        color: white; }
-
-.home .container-wrap.second {
-  background-color: #007fbe; }
 
 #navbar {
   background-color: rgba(0, 127, 190, 0.95);

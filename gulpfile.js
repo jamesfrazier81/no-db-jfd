@@ -54,7 +54,9 @@ gulp.task('js', function() {
 		.pipe(plumber(plumberErrorHandler))
 		.pipe(jshint())
 		.pipe(jshint.reporter('default', { verbose: true }))
-        .pipe(uglify())
+        .pipe(uglify().on('error', function(e){
+            console.log(e);
+         }))
 		.pipe(gulp.dest('./js/dist'))
 		.pipe(notify({
 			title: 'Gulp JS',
