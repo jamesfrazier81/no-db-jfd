@@ -7,10 +7,9 @@
             background-repeat: no-repeat;
             background-position: top center;
 
-            // filter: contrast(200%);
-
             .container {
                 position: relative;
+                height: 100vh;
 
                 .caption-box {
                     display: none;
@@ -34,42 +33,29 @@
         }
 
         &.second, &.third, &.fourth {
-            background-color: $color-blue;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: top center;
+            background-attachment: fixed;
 
             .container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                align-content: center;
-                justify-content: center;
+                height: 100vh;
 
                 small {
                     color: white;
-                    font-weight: 300;
-                    text-transform: uppercase;
-                    display: inline-block;
-                    padding: 6px 15px;
-                    border: 2px solid white;
-                    letter-spacing: 2px;
+                    border-color: white;
                 }
 
                 h2 {
                     color: white;
-                    text-align: center;
-                    margin: 10px 0 20px 0;
                 }
 
                 p {
                     color: white;
                     text-align: center;
-                    display: block;
-                    max-width: $media-tablet;
                 }
 
-                ul {
+                .home-icons {
                     display: flex;
                     align-items: center;
                     align-content: center;
@@ -92,10 +78,10 @@
                         }
 
                         .fa {
-                            color: white;
                             font-family: $font-awesome;
                             font-size: 7rem;
                             transition: all 0.3s ease-in-out;
+                            color: white;
 
                             &:hover {
                                 transform: translate(0, -10px);
@@ -107,18 +93,25 @@
         }
 
         &.second {
-            background-color: $color-blue;
-            @include img-top-left;
+            position: relative;
+            background-image: url(img/dist/bg-websites-liberty.jpg);
+
+            .element {
+                .fa {
+                    color: white;
+                    font-size: 2rem;
+                    position: absolute;
+                }
+            }
         }
 
         &.third {
-            background-color: $color-blue;
-            @include img-bottom-left;
+            background-image: url(img/dist/bg-email-gmail.jpg);
 
             .container {
                 small {
                     color: black;
-                    border: 2px solid black;
+                    border-color: black;
                 }
 
                 h2 {
@@ -129,15 +122,7 @@
                     color: black;
                 }
 
-                ul li {
-                    &:first-child {
-                        text-align: right;
-                    }
-
-                    &:last-child {
-                        text-align: left;
-                    }
-
+                .home-icons li {
                     img, svg {
                         max-width: 250px;
                         height: auto;
@@ -153,7 +138,6 @@
 
         &.fourth {
             background-color: $color-blue;
-            @include img-top-left;
         }
     }
 }
@@ -178,6 +162,14 @@
                     p {
                         color: white;
                     }
+                }
+            }
+        }
+
+        &.third {
+            .container {
+                .home-icons {
+                    flex-direction: column;
                 }
             }
         }

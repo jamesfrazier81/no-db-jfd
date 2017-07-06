@@ -1,1 +1,1 @@
-$(function(){$.fn.extend({animateCss:function(n){this.addClass("animated "+n).one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",function(){$(this).removeClass("animated "+n)})}})});
+$(document).ready(function(){$.fn.extend({animateCss:function(n){this.addClass("animated "+n).one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",function(){$(this).removeClass("animated "+n)})}}),$(".navmobile .fa-bars").click(function(){$(".mobilemenu").slideToggle()})});

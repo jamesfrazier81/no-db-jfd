@@ -1,0 +1,31 @@
+// Internal pages only
+.services.inner {
+    .container-wrap {
+        &.first {
+            background-color: white;
+        }
+
+        &.second {
+            background-image: url(/img/dist/bg-websites-wordpress.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        &.third {
+            background-image: url(/img/dist/bg-websites-html5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+
+            .container {
+            	h2, p, small {
+            		color: white;
+            		border-color: white;
+            	}
+            }
+        }
+    }
+}
