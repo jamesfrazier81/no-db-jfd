@@ -12,7 +12,17 @@ $(document).ready(function(){
 
 	// Hidden mobile menu
 	$('.navmobile .fa-bars').click(function() {
-		$('.mobilemenu').slideToggle();
+		$('.mobilemenu').slideDown(function() {
+			$('.fa-times').css('display', 'inline-block');
+			$('.fa-bars').css('display', 'none');
+		});		
+	});
+
+	$('.navmobile .fa-times').click(function() {
+		$('.mobilemenu').slideUp(function() {
+			$('.fa-times').css('display', 'none');
+			$('.fa-bars').css('display', 'inline-block');
+		});		
 	});
 
 	// Animate mouse

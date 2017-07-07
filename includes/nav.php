@@ -13,6 +13,7 @@
 	</div>
 	<div class="navmobile">
 		<i class="fa fa-bars" aria-hidden="true"></i>
+		<i class="fa fa-times" aria-hidden="true"></i>
 	</div>
 </div>
 <ul class="mobilemenu">

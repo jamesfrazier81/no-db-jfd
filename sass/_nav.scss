@@ -65,7 +65,8 @@
     position: fixed;
     width: 100%;
     height: auto;
-    top: 0;
+    // height: calc(100vh - 70px);
+    bottom: 68px;
     left: 0;
     background-color: rgba($color-blue, 0.95);
     box-shadow: 0 0 20px rgba(black, 0.15);
@@ -73,11 +74,21 @@
     li {
         margin: 0;
         padding: 8px 20px;
+        text-align: center;
+        border-bottom: 1px solid rgba(black, 0.15);
 
         a {
             color: white;
             display: block;
             width: 100%;
+        }
+
+        &:hover {
+            background-color: rgba(white, 0.75);
+
+            a {
+                color: $color-blue;
+            }
         }
     }
 }
@@ -86,7 +97,7 @@
 .container-wrap {
     &.subnav {
         z-index: 2;
-        position: absolute;
+        position: fixed;
         top: 0;
         width: 100%;
         background-color: rgba(black, 0.75);
@@ -131,6 +142,14 @@
             .fa {
                 color: white;
                 font-size: 1.5rem;
+
+                &.fa-bars {
+                    display: inline-block;
+                }
+
+                &.fa-times {
+                    display: none;
+                }                
             }
         }
     }
