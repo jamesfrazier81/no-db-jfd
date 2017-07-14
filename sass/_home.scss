@@ -94,7 +94,7 @@
 
         &.second {
             position: relative;
-            background-image: url(img/dist/bg-websites-liberty.jpg);
+            background-image: url(img/dist/bg-home-websites.jpg);
 
             .element {
                 .fa {
@@ -106,7 +106,7 @@
         }
 
         &.third {
-            background-image: url(img/dist/bg-email-gmail.jpg);
+            background-image: url(img/dist/bg-home-email.jpg);
 
             .container {
                 small {
@@ -137,7 +137,8 @@
         }
 
         &.fourth {
-            background-color: $color-blue;
+            // background-color: $color-blue;
+            background-image: url(img/dist/bg-home-partner.jpg);
         }
     }
 }

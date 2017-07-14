@@ -1,0 +1,35 @@
+// Internal pages only
+.about.inner {
+    .container-wrap {
+        &.first {
+            background-image: url(/img/dist/bg-about-business.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            // filter: blur(5px);
+
+            .container {
+                h2, p, small {
+                    color: white;
+                    border-color: white;
+                }
+            }
+        }
+
+        &.second {
+            background-image: url(/img/dist/bg-about-party.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+
+            .container {
+            	h2, p, small {
+            		color: white;
+            		border-color: white;
+            	}
+            }
+        }
+    }
+}

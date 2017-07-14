@@ -159,14 +159,14 @@ p, li {
 
 .home .container-wrap.second {
   position: relative;
-  background-image: url(img/dist/bg-websites-liberty.jpg); }
+  background-image: url(img/dist/bg-home-websites.jpg); }
   .home .container-wrap.second .element .fa {
     color: white;
     font-size: 2rem;
     position: absolute; }
 
 .home .container-wrap.third {
-  background-image: url(img/dist/bg-email-gmail.jpg); }
+  background-image: url(img/dist/bg-home-email.jpg); }
   .home .container-wrap.third .container small {
     color: black;
     border-color: black; }
@@ -186,7 +186,7 @@ p, li {
       transform: translate(0, -10px); }
 
 .home .container-wrap.fourth {
-  background-color: #007fbe; }
+  background-image: url(img/dist/bg-home-partner.jpg); }
 
 @media screen and (max-width: 1024px) {
   .home .container-wrap.first .container .caption-box {
@@ -332,6 +332,28 @@ p, li {
   background-position: center center;
   background-attachment: fixed; }
   .services.inner .container-wrap.third .container h2, .services.inner .container-wrap.third .container p, .services.inner .container-wrap.third .container small {
+    color: white;
+    border-color: white; }
+
+.about.inner .container-wrap.first {
+  background-image: url(/img/dist/bg-about-business.jpg);
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
+  .about.inner .container-wrap.first .container h2, .about.inner .container-wrap.first .container p, .about.inner .container-wrap.first .container small {
+    color: white;
+    border-color: white; }
+
+.about.inner .container-wrap.second {
+  background-image: url(/img/dist/bg-about-party.jpg);
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
+  .about.inner .container-wrap.second .container h2, .about.inner .container-wrap.second .container p, .about.inner .container-wrap.second .container small {
     color: white;
     border-color: white; }
 
