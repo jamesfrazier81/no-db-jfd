@@ -71,7 +71,7 @@
             }
 
             h2 {
-                margin: 10px 0 20px 0;
+                margin: 0;
             }
 
             p {
@@ -87,10 +87,16 @@
         margin-bottom: 68px;
 
         .container-wrap {
+            border-bottom: 5px solid $color-blue;
+
+            &:last-child {
+                border: none;
+            }
+
             .container {
                 flex-direction: column;
                 height: auto;
-                padding: 60px 0;
+                padding: 100px 0;
 
                 .container-left {
                     width: 100%;

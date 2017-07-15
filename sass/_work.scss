@@ -1,0 +1,65 @@
+.work.inner {
+    .container-wrap {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+
+        .container {
+            .websites, .emails {
+                width: 50%;
+                display: flex;
+                flex-wrap: wrap;
+
+                a {
+                    width: 30%;
+                    height: auto;
+                    margin: 1%;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        &.first {
+            background-image: url(/img/dist/bg-work-websites.jpg);
+
+            .container {
+                h2, p, small, li {
+                    color: white;
+                    border-color: white;
+                }
+            }
+        }
+
+        &.second {
+            background-image: url(/img/dist/bg-work-email.jpg);
+        }
+    }
+}
+
+// Lightgallery captions
+.lg-outer {
+    .lg .lg-sub-html {
+        background-color: rgba($color-blue, 0.75);
+
+        h4 {
+            font-family: $font-sans;
+            font-size: 1.25rem;
+            font-weight: $font-bold;
+            color: white;
+            display: inline-block;
+            padding: 3px 10px;
+        }
+
+        p {
+            font-family: $font-sans;
+            font-size: 0.85rem;
+            line-height: 1rem;
+            color: white;
+        }
+    }
+}

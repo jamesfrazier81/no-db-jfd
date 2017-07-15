@@ -77,19 +77,19 @@ p, li {
 
 @media screen and (max-width: 480px) {
   html, body {
-    font-size: 14px; } }
+    font-size: 16px; } }
 
-.home .container-wrap.first {
+.home .container-wrap.first, .thank-you .container-wrap.first {
   z-index: 1;
   background-image: url(/img/dist/james-in-snow.jpg);
   -moz-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center; }
-  .home .container-wrap.first .container {
+  .home .container-wrap.first .container, .thank-you .container-wrap.first .container {
     position: relative;
     height: 100vh; }
-    .home .container-wrap.first .container .caption-box {
+    .home .container-wrap.first .container .caption-box, .thank-you .container-wrap.first .container .caption-box {
       display: none;
       position: absolute;
       max-width: 30%;
@@ -97,29 +97,29 @@ p, li {
       right: 0;
       background-color: rgba(0, 0, 0, 0.5);
       padding: 20px; }
-      .home .container-wrap.first .container .caption-box h1 {
+      .home .container-wrap.first .container .caption-box h1, .thank-you .container-wrap.first .container .caption-box h1 {
         color: white;
         margin: 0; }
-      .home .container-wrap.first .container .caption-box p {
+      .home .container-wrap.first .container .caption-box p, .thank-you .container-wrap.first .container .caption-box p {
         color: white; }
 
-.home .container-wrap.second, .home .container-wrap.third, .home .container-wrap.fourth {
+.home .container-wrap.second, .home .container-wrap.third, .home .container-wrap.fourth, .thank-you .container-wrap.second, .thank-you .container-wrap.third, .thank-you .container-wrap.fourth {
   -moz-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed; }
-  .home .container-wrap.second .container, .home .container-wrap.third .container, .home .container-wrap.fourth .container {
+  .home .container-wrap.second .container, .home .container-wrap.third .container, .home .container-wrap.fourth .container, .thank-you .container-wrap.second .container, .thank-you .container-wrap.third .container, .thank-you .container-wrap.fourth .container {
     height: 100vh; }
-    .home .container-wrap.second .container small, .home .container-wrap.third .container small, .home .container-wrap.fourth .container small {
+    .home .container-wrap.second .container small, .home .container-wrap.third .container small, .home .container-wrap.fourth .container small, .thank-you .container-wrap.second .container small, .thank-you .container-wrap.third .container small, .thank-you .container-wrap.fourth .container small {
       color: white;
       border-color: white; }
-    .home .container-wrap.second .container h2, .home .container-wrap.third .container h2, .home .container-wrap.fourth .container h2 {
+    .home .container-wrap.second .container h2, .home .container-wrap.third .container h2, .home .container-wrap.fourth .container h2, .thank-you .container-wrap.second .container h2, .thank-you .container-wrap.third .container h2, .thank-you .container-wrap.fourth .container h2 {
       color: white; }
-    .home .container-wrap.second .container p, .home .container-wrap.third .container p, .home .container-wrap.fourth .container p {
+    .home .container-wrap.second .container p, .home .container-wrap.third .container p, .home .container-wrap.fourth .container p, .thank-you .container-wrap.second .container p, .thank-you .container-wrap.third .container p, .thank-you .container-wrap.fourth .container p {
       color: white;
       text-align: center; }
-    .home .container-wrap.second .container .home-icons, .home .container-wrap.third .container .home-icons, .home .container-wrap.fourth .container .home-icons {
+    .home .container-wrap.second .container .home-icons, .home .container-wrap.third .container .home-icons, .home .container-wrap.fourth .container .home-icons, .thank-you .container-wrap.second .container .home-icons, .thank-you .container-wrap.third .container .home-icons, .thank-you .container-wrap.fourth .container .home-icons {
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -138,54 +138,54 @@ p, li {
       list-style: none;
       margin: 0;
       padding: 0; }
-      .home .container-wrap.second .container .home-icons li, .home .container-wrap.third .container .home-icons li, .home .container-wrap.fourth .container .home-icons li {
+      .home .container-wrap.second .container .home-icons li, .home .container-wrap.third .container .home-icons li, .home .container-wrap.fourth .container .home-icons li, .thank-you .container-wrap.second .container .home-icons li, .thank-you .container-wrap.third .container .home-icons li, .thank-you .container-wrap.fourth .container .home-icons li {
         width: 50%;
         padding: 2% 5%; }
-        .home .container-wrap.second .container .home-icons li:first-child, .home .container-wrap.third .container .home-icons li:first-child, .home .container-wrap.fourth .container .home-icons li:first-child {
+        .home .container-wrap.second .container .home-icons li:first-child, .home .container-wrap.third .container .home-icons li:first-child, .home .container-wrap.fourth .container .home-icons li:first-child, .thank-you .container-wrap.second .container .home-icons li:first-child, .thank-you .container-wrap.third .container .home-icons li:first-child, .thank-you .container-wrap.fourth .container .home-icons li:first-child {
           text-align: right; }
-        .home .container-wrap.second .container .home-icons li:last-child, .home .container-wrap.third .container .home-icons li:last-child, .home .container-wrap.fourth .container .home-icons li:last-child {
+        .home .container-wrap.second .container .home-icons li:last-child, .home .container-wrap.third .container .home-icons li:last-child, .home .container-wrap.fourth .container .home-icons li:last-child, .thank-you .container-wrap.second .container .home-icons li:last-child, .thank-you .container-wrap.third .container .home-icons li:last-child, .thank-you .container-wrap.fourth .container .home-icons li:last-child {
           text-align: left; }
-        .home .container-wrap.second .container .home-icons li .fa, .home .container-wrap.third .container .home-icons li .fa, .home .container-wrap.fourth .container .home-icons li .fa {
+        .home .container-wrap.second .container .home-icons li .fa, .home .container-wrap.third .container .home-icons li .fa, .home .container-wrap.fourth .container .home-icons li .fa, .thank-you .container-wrap.second .container .home-icons li .fa, .thank-you .container-wrap.third .container .home-icons li .fa, .thank-you .container-wrap.fourth .container .home-icons li .fa {
           font-family: FontAwesome;
           font-size: 7rem;
           -webkit-transition: all 0.3s ease-in-out;
           -moz-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
           color: white; }
-          .home .container-wrap.second .container .home-icons li .fa:hover, .home .container-wrap.third .container .home-icons li .fa:hover, .home .container-wrap.fourth .container .home-icons li .fa:hover {
+          .home .container-wrap.second .container .home-icons li .fa:hover, .home .container-wrap.third .container .home-icons li .fa:hover, .home .container-wrap.fourth .container .home-icons li .fa:hover, .thank-you .container-wrap.second .container .home-icons li .fa:hover, .thank-you .container-wrap.third .container .home-icons li .fa:hover, .thank-you .container-wrap.fourth .container .home-icons li .fa:hover {
             -webkit-transform: translate(0, -10px);
             -moz-transform: translate(0, -10px);
             transform: translate(0, -10px); }
 
-.home .container-wrap.second {
+.home .container-wrap.second, .thank-you .container-wrap.second {
   position: relative;
   background-image: url(img/dist/bg-home-websites.jpg); }
-  .home .container-wrap.second .element .fa {
+  .home .container-wrap.second .element .fa, .thank-you .container-wrap.second .element .fa {
     color: white;
     font-size: 2rem;
     position: absolute; }
 
-.home .container-wrap.third {
+.home .container-wrap.third, .thank-you .container-wrap.third {
   background-image: url(img/dist/bg-home-email.jpg); }
-  .home .container-wrap.third .container small {
+  .home .container-wrap.third .container small, .thank-you .container-wrap.third .container small {
     color: black;
     border-color: black; }
-  .home .container-wrap.third .container h2 {
+  .home .container-wrap.third .container h2, .thank-you .container-wrap.third .container h2 {
     color: black; }
-  .home .container-wrap.third .container p {
+  .home .container-wrap.third .container p, .thank-you .container-wrap.third .container p {
     color: black; }
-  .home .container-wrap.third .container .home-icons li img, .home .container-wrap.third .container .home-icons li svg {
+  .home .container-wrap.third .container .home-icons li img, .home .container-wrap.third .container .home-icons li svg, .thank-you .container-wrap.third .container .home-icons li img, .thank-you .container-wrap.third .container .home-icons li svg {
     max-width: 250px;
     height: auto;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
-    .home .container-wrap.third .container .home-icons li img:hover, .home .container-wrap.third .container .home-icons li svg:hover {
+    .home .container-wrap.third .container .home-icons li img:hover, .home .container-wrap.third .container .home-icons li svg:hover, .thank-you .container-wrap.third .container .home-icons li img:hover, .thank-you .container-wrap.third .container .home-icons li svg:hover {
       -webkit-transform: translate(0, -10px);
       -moz-transform: translate(0, -10px);
       transform: translate(0, -10px); }
 
-.home .container-wrap.fourth {
+.home .container-wrap.fourth, .thank-you .container-wrap.fourth {
   background-image: url(img/dist/bg-home-partner.jpg); }
 
 @media screen and (max-width: 1024px) {
@@ -288,7 +288,7 @@ p, li {
       letter-spacing: 2px;
       border: 1px solid; }
     .body-wrap .container-wrap .container h2 {
-      margin: 10px 0 20px 0; }
+      margin: 0; }
     .body-wrap .container-wrap .container p {
       display: block;
       max-width: 768px; }
@@ -296,44 +296,42 @@ p, li {
 @media screen and (max-width: 768px) {
   .body-wrap {
     margin-bottom: 68px; }
-    .body-wrap .container-wrap .container {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -moz-box-orient: vertical;
-      -moz-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      height: auto;
-      padding: 60px 0; }
-      .body-wrap .container-wrap .container .container-left {
-        width: 100%;
-        margin: 0; }
-      .body-wrap .container-wrap .container .container-right {
-        width: 100%; }
-    .body-wrap .container-wrap.first .container {
-      padding: 80px 0 60px 0; } }
+    .body-wrap .container-wrap {
+      border-bottom: 5px solid #007fbe; }
+      .body-wrap .container-wrap:last-child {
+        border: none; }
+      .body-wrap .container-wrap .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: auto;
+        padding: 100px 0; }
+        .body-wrap .container-wrap .container .container-left {
+          width: 100%;
+          margin: 0; }
+        .body-wrap .container-wrap .container .container-right {
+          width: 100%; }
+      .body-wrap .container-wrap.first .container {
+        padding: 80px 0 60px 0; } }
 
-.services.inner .container-wrap.first {
-  background-color: white; }
-
-.services.inner .container-wrap.second {
-  background-image: url(/img/dist/bg-websites-wordpress.jpg);
+.services.inner .container-wrap {
   background-repeat: no-repeat;
   -moz-background-size: cover;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
-
-.services.inner .container-wrap.third {
-  background-image: url(/img/dist/bg-websites-html5.jpg);
-  background-repeat: no-repeat;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed; }
-  .services.inner .container-wrap.third .container h2, .services.inner .container-wrap.third .container p, .services.inner .container-wrap.third .container small {
+  .services.inner .container-wrap .container h2, .services.inner .container-wrap .container p, .services.inner .container-wrap .container small, .services.inner .container-wrap .container li {
     color: white;
     border-color: white; }
+  .services.inner .container-wrap.first {
+    background-image: url(/img/dist/bg-services-websites.jpg); }
+  .services.inner .container-wrap.second {
+    background-image: url(/img/dist/bg-services-wordpress.jpg); }
+  .services.inner .container-wrap.third {
+    background-image: url(/img/dist/bg-services-html5.jpg); }
 
 .about.inner .container-wrap.first {
   background-image: url(/img/dist/bg-about-business.jpg);
@@ -356,6 +354,141 @@ p, li {
   .about.inner .container-wrap.second .container h2, .about.inner .container-wrap.second .container p, .about.inner .container-wrap.second .container small {
     color: white;
     border-color: white; }
+
+.work.inner .container-wrap {
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
+  .work.inner .container-wrap .container .websites, .work.inner .container-wrap .container .emails {
+    width: 50%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .work.inner .container-wrap .container .websites a, .work.inner .container-wrap .container .emails a {
+      width: 30%;
+      height: auto;
+      margin: 1%; }
+      .work.inner .container-wrap .container .websites a img, .work.inner .container-wrap .container .emails a img {
+        width: 100%;
+        height: auto; }
+  .work.inner .container-wrap.first {
+    background-image: url(/img/dist/bg-work-websites.jpg); }
+    .work.inner .container-wrap.first .container h2, .work.inner .container-wrap.first .container p, .work.inner .container-wrap.first .container small, .work.inner .container-wrap.first .container li {
+      color: white;
+      border-color: white; }
+  .work.inner .container-wrap.second {
+    background-image: url(/img/dist/bg-work-email.jpg); }
+
+.lg-outer .lg .lg-sub-html {
+  background-color: rgba(0, 127, 190, 0.75); }
+  .lg-outer .lg .lg-sub-html h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    display: inline-block;
+    padding: 3px 10px; }
+  .lg-outer .lg .lg-sub-html p {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.85rem;
+    line-height: 1rem;
+    color: white; }
+
+.contact.inner .container-wrap {
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
+  .contact.inner .container-wrap .container h2, .contact.inner .container-wrap .container p, .contact.inner .container-wrap .container small, .contact.inner .container-wrap .container li {
+    color: white;
+    border-color: white; }
+  .contact.inner .container-wrap.first {
+    background-image: url(/img/dist/bg-contact-form.jpg); }
+    .contact.inner .container-wrap.first .contact-form {
+      width: 100%;
+      max-width: 768px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      .contact.inner .container-wrap.first .contact-form form {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+        .contact.inner .container-wrap.first .contact-form form label {
+          display: block;
+          width: 100%;
+          color: white;
+          margin: 0;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          margin-top: 20px;
+          font-weight: 700; }
+          .contact.inner .container-wrap.first .contact-form form label .required {
+            color: #007fbe; }
+          .contact.inner .container-wrap.first .contact-form form label:first-child {
+            margin-top: 0; }
+        .contact.inner .container-wrap.first .contact-form form input, .contact.inner .container-wrap.first .contact-form form textarea {
+          display: block;
+          width: 100%;
+          margin: 5px 0 0 0;
+          padding: 10px;
+          font-size: 1rem;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          background-color: rgba(0, 127, 190, 0.95);
+          border: 1px solid white;
+          color: white; }
+        .contact.inner .container-wrap.first .contact-form form input[type="submit"] {
+          width: auto;
+          display: inline-block;
+          padding: 12px 30px;
+          font-weight: 700;
+          border: none;
+          margin-top: 40px;
+          background-color: #007fbe; }
+          .contact.inner .container-wrap.first .contact-form form input[type="submit"]:hover {
+            color: #007fbe; }
+        .contact.inner .container-wrap.first .contact-form form #req-field-desc {
+          font-size: 0.85rem;
+          font-style: italic; }
+          .contact.inner .container-wrap.first .contact-form form #req-field-desc .required {
+            color: #007fbe; }
+        .contact.inner .container-wrap.first .contact-form form .error {
+          background-color: rgba(255, 0, 0, 0.75);
+          padding: 20px;
+          margin-top: 20px; }
+          .contact.inner .container-wrap.first .contact-form form .error p, .contact.inner .container-wrap.first .contact-form form .error li {
+            color: white;
+            margin: 0; }
+          .contact.inner .container-wrap.first .contact-form form .error ul {
+            margin: 0; }
+          .contact.inner .container-wrap.first .contact-form form .error p {
+            font-weight: 700; }
+  .contact.inner .container-wrap.second {
+    background-image: url(/img/dist/bg-contact-paypal.jpg); }
+
+.thanks.inner .container-wrap {
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
+  .thanks.inner .container-wrap .container h1, .thanks.inner .container-wrap .container p, .thanks.inner .container-wrap .container small, .thanks.inner .container-wrap .container li {
+    color: white;
+    border-color: white; }
+  .thanks.inner .container-wrap .container h1 {
+    margin: 0; }
+  .thanks.inner .container-wrap.first {
+    background-image: url(/img/dist/bg-contact-thanks.jpg); }
 
 #navbar {
   background-color: rgba(0, 127, 190, 0.95);
@@ -447,7 +580,8 @@ p, li {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.75); }
+  background-color: rgba(0, 0, 0, 0.75);
+  border: none; }
   .container-wrap.subnav ul {
     display: -webkit-box;
     display: -moz-box;
