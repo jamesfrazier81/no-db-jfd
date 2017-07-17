@@ -54,7 +54,7 @@
 	<!-- Section 1 -->
 	<div id="form" class="container-wrap first">
 		<div class="container column left">
-			<h2>Connect</h2>
+			<h1>Connect</h1>
 			<p>Contact James Frazier Design to get an estimate on your next project. Maybe you need a website.  Maybe it's an email campaign you need structured and built. No matter the stage of your need, I'm here to help you get the best results for the most reasonable price.</p>
 			<div class="contact-form">
 				<form method="post" action="">

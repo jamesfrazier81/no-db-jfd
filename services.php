@@ -10,7 +10,7 @@
 	<div id="intro" class="container-wrap first">
 		<div class="container left column">
 			<small>Websites</small>
-			<h2></h2>
+			<h1>The Virtual Handshake</h1>
 			<p>Websites are the first impression made with your online demographics. Put yourself in your customers' shoes. What is the first thing you do after hearing about a product or service you are interested in? Maybe refer to <em>Yelp!</em> or maybe even a social media page? But where do you ultimately end up? Their website!</p>
 			<p>We've all seen the shady-looking, out-of-date site. We ask ouselves:</p>
 			<ul>

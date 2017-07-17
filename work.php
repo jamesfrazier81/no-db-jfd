@@ -21,7 +21,7 @@
 	<!-- Section 1 -->
 	<div id="web-wordpress" class="container-wrap first">
 		<div class="container column">
-			<h2>Websites</h2>
+			<h1>Websites</h1>
 			<p>These are a few of my most recent website projects.</p>
 			<div id="websites" class="gallery websites">
 				<a href="img/dist/work-websites-liberty-wildlife.jpg" data-sub-html="<h4>Liberty Wildlife</h4><p>WordPress - <a href='http://libertywildlife.org' target='_blank'>Visit the Site</a>.</p>">

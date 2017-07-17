@@ -10,7 +10,7 @@
 	<div id="professional" class="container-wrap first">
 		<div class="container left column">
 			<small>Professional</small>
-			<h2>Business in the Front</h2>
+			<h1>Business in the Front</h1>
 			<p>Since 2009, James Frazier Design has been providing small businesses throughout Phoenix (and some in San Diego) with quality websites, email templates, brand identities (logos), illustrations and more. By day, I am a Web Developer at a trusted, talented design agency. By night, I continue making the web a better place as a freelance developer.</p>
 		</div>
 	</div>
