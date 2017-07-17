@@ -10,14 +10,15 @@
 	<div id="intro" class="container-wrap first">
 		<div class="container left column">
 			<small>Websites</small>
-			<h2>It's time to represent</h2>
-			<p>Websites are the first impression made with your online demographics. Put yourself in your customers' shoes - what's the first thing you do after hearing about a product or service you are interested in? Maybe refer to Yelp! or maybe even a social media page? But where do you ultimately end up? Their website! We've all seen the shady-looking site. We ask ouselves:</p>
+			<h2></h2>
+			<p>Websites are the first impression made with your online demographics. Put yourself in your customers' shoes. What is the first thing you do after hearing about a product or service you are interested in? Maybe refer to <em>Yelp!</em> or maybe even a social media page? But where do you ultimately end up? Their website!</p>
+			<p>We've all seen the shady-looking, out-of-date site. We ask ouselves:</p>
 			<ul>
 				<li>Is this a real company?</li>
-				<li>Are they trustworthy?</li>
-				<li>If they won't invest in their own site, why should I buy from them?</li>
+				<li>Are they still in business?</li>
+				<li>If they won't invest in their own site, should I trust them?</li>
 			</ul>
-			<p>Make sure your website has relevant and <strong>engaging content</strong> combined with a <strong>killer design</strong>.</p>
+			<p>Make sure your website has relevant, engaging content combined with a modern design.</p>
 		</div>
 	</div>
 	<!-- Section 2 -->

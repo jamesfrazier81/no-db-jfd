@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,700|Roboto:300,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,700|Roboto:300,500,700");
 html, body {
   margin: 0;
   padding: 0;
@@ -6,74 +6,71 @@ html, body {
   font-size: 18px;
   color: #333333;
   font-smoothing: antialiased; }
-
-h1 {
-  font-family: "Roboto Slab", serif;
-  font-size: 3rem;
-  font-weight: 100; }
-
-h2 {
-  font-family: "Roboto Slab", serif;
-  font-size: 2.75rem;
-  font-weight: 100; }
-
-h3 {
-  font-family: "Roboto Slab", serif;
-  font-size: 2rem;
-  font-weight: 100; }
-
-h4 {
-  font-family: "Roboto Slab", serif;
-  font-size: 1.25rem;
-  font-weight: 700; }
-
-p, li {
-  font-size: 1rem;
-  line-height: 1.75rem; }
-  p a, li a {
-    text-decoration: none;
+  html h1, body h1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 3rem;
+    font-weight: 100; }
+  html h2, body h2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 2.75rem;
+    font-weight: 100; }
+  html h3, body h3 {
+    font-family: "Roboto Slab", serif;
+    font-size: 2rem;
+    font-weight: 100; }
+  html h4, body h4 {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.25rem;
+    font-weight: 700; }
+  html p, html li, body p, body li {
+    font-size: 1rem;
+    line-height: 1.75rem; }
+    html p a, html li a, body p a, body li a {
+      text-decoration: none;
+      font-weight: 700;
+      color: inherit; }
+  html .btn, body .btn {
+    display: inline-block;
+    padding: 12px 30px;
     font-weight: 700;
-    color: inherit; }
-
-.btn {
-  display: inline-block;
-  padding: 12px 30px;
-  font-weight: 700;
-  text-decoration: none;
-  -webkit-transform: skew(-5deg, 0);
-  -moz-transform: skew(-5deg, 0);
-  transform: skew(-5deg, 0);
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-  .btn .fa {
-    margin-left: 5px; }
-  .btn.btn-white {
-    background-color: white;
-    color: #007fbe; }
-    .btn.btn-white:hover {
-      color: white;
-      -webkit-transform: skew(5deg, 0);
-      -moz-transform: skew(5deg, 0);
-      transform: skew(5deg, 0);
-      -webkit-box-shadow: inset 0 0 0 25px #333333;
-      -moz-box-shadow: inset 0 0 0 25px #333333;
-      box-shadow: inset 0 0 0 25px #333333; }
-  .btn.btn-blue {
-    background-color: #007fbe;
-    color: white; }
-    .btn.btn-blue:hover {
-      color: #007fbe;
-      -webkit-transform: skew(5deg, 0);
-      -moz-transform: skew(5deg, 0);
-      transform: skew(5deg, 0);
-      -webkit-box-shadow: inset 0 0 0 25px white;
-      -moz-box-shadow: inset 0 0 0 25px white;
-      box-shadow: inset 0 0 0 25px white; }
+    text-decoration: none;
+    -webkit-transform: skew(-5deg, 0);
+    -moz-transform: skew(-5deg, 0);
+    transform: skew(-5deg, 0);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    html .btn .fa, body .btn .fa {
+      margin-left: 5px; }
+    html .btn.btn-white, body .btn.btn-white {
+      background-color: white;
+      color: #007fbe; }
+      html .btn.btn-white:hover, body .btn.btn-white:hover {
+        color: white;
+        -webkit-transform: skew(5deg, 0);
+        -moz-transform: skew(5deg, 0);
+        transform: skew(5deg, 0);
+        -webkit-box-shadow: inset 0 0 0 25px #333333;
+        -moz-box-shadow: inset 0 0 0 25px #333333;
+        box-shadow: inset 0 0 0 25px #333333; }
+    html .btn.btn-blue, body .btn.btn-blue {
+      background-color: #007fbe;
+      color: white; }
+      html .btn.btn-blue:hover, body .btn.btn-blue:hover {
+        color: #007fbe;
+        -webkit-transform: skew(5deg, 0);
+        -moz-transform: skew(5deg, 0);
+        transform: skew(5deg, 0);
+        -webkit-box-shadow: inset 0 0 0 25px white;
+        -moz-box-shadow: inset 0 0 0 25px white;
+        box-shadow: inset 0 0 0 25px white; }
 
 @media screen and (max-width: 1024px) {
-  h1 {
-    font-size: 2.5rem; } }
+  html h1, html h2, body h1, body h2 {
+    font-size: 2.5rem;
+    line-height: 3rem; }
+  html p, body p {
+    font-weight: 400; } }
 
 @media screen and (max-width: 480px) {
   html, body {
@@ -87,14 +84,11 @@ p, li {
   background-repeat: no-repeat;
   background-position: top center; }
   .home .container-wrap.first .container, .thank-you .container-wrap.first .container {
-    position: relative;
-    height: 100vh; }
+    position: relative; }
     .home .container-wrap.first .container .caption-box, .thank-you .container-wrap.first .container .caption-box {
-      display: none;
       position: absolute;
-      max-width: 30%;
-      bottom: 43%;
-      right: 0;
+      max-width: 80%;
+      bottom: 10%;
       background-color: rgba(0, 0, 0, 0.5);
       padding: 20px; }
       .home .container-wrap.first .container .caption-box h1, .thank-you .container-wrap.first .container .caption-box h1 {
@@ -109,53 +103,51 @@ p, li {
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed; }
-  .home .container-wrap.second .container, .home .container-wrap.third .container, .home .container-wrap.fourth .container, .thank-you .container-wrap.second .container, .thank-you .container-wrap.third .container, .thank-you .container-wrap.fourth .container {
-    height: 100vh; }
-    .home .container-wrap.second .container small, .home .container-wrap.third .container small, .home .container-wrap.fourth .container small, .thank-you .container-wrap.second .container small, .thank-you .container-wrap.third .container small, .thank-you .container-wrap.fourth .container small {
-      color: white;
-      border-color: white; }
-    .home .container-wrap.second .container h2, .home .container-wrap.third .container h2, .home .container-wrap.fourth .container h2, .thank-you .container-wrap.second .container h2, .thank-you .container-wrap.third .container h2, .thank-you .container-wrap.fourth .container h2 {
-      color: white; }
-    .home .container-wrap.second .container p, .home .container-wrap.third .container p, .home .container-wrap.fourth .container p, .thank-you .container-wrap.second .container p, .thank-you .container-wrap.third .container p, .thank-you .container-wrap.fourth .container p {
-      color: white;
-      text-align: center; }
-    .home .container-wrap.second .container .home-icons, .home .container-wrap.third .container .home-icons, .home .container-wrap.fourth .container .home-icons, .thank-you .container-wrap.second .container .home-icons, .thank-you .container-wrap.third .container .home-icons, .thank-you .container-wrap.fourth .container .home-icons {
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -moz-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -ms-flex-line-pack: center;
-      align-content: center;
-      -webkit-box-pack: center;
-      -moz-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      width: 100%;
-      list-style: none;
-      margin: 0;
-      padding: 0; }
-      .home .container-wrap.second .container .home-icons li, .home .container-wrap.third .container .home-icons li, .home .container-wrap.fourth .container .home-icons li, .thank-you .container-wrap.second .container .home-icons li, .thank-you .container-wrap.third .container .home-icons li, .thank-you .container-wrap.fourth .container .home-icons li {
-        width: 50%;
-        padding: 2% 5%; }
-        .home .container-wrap.second .container .home-icons li:first-child, .home .container-wrap.third .container .home-icons li:first-child, .home .container-wrap.fourth .container .home-icons li:first-child, .thank-you .container-wrap.second .container .home-icons li:first-child, .thank-you .container-wrap.third .container .home-icons li:first-child, .thank-you .container-wrap.fourth .container .home-icons li:first-child {
-          text-align: right; }
-        .home .container-wrap.second .container .home-icons li:last-child, .home .container-wrap.third .container .home-icons li:last-child, .home .container-wrap.fourth .container .home-icons li:last-child, .thank-you .container-wrap.second .container .home-icons li:last-child, .thank-you .container-wrap.third .container .home-icons li:last-child, .thank-you .container-wrap.fourth .container .home-icons li:last-child {
-          text-align: left; }
-        .home .container-wrap.second .container .home-icons li .fa, .home .container-wrap.third .container .home-icons li .fa, .home .container-wrap.fourth .container .home-icons li .fa, .thank-you .container-wrap.second .container .home-icons li .fa, .thank-you .container-wrap.third .container .home-icons li .fa, .thank-you .container-wrap.fourth .container .home-icons li .fa {
-          font-family: FontAwesome;
-          font-size: 7rem;
-          -webkit-transition: all 0.3s ease-in-out;
-          -moz-transition: all 0.3s ease-in-out;
-          transition: all 0.3s ease-in-out;
-          color: white; }
-          .home .container-wrap.second .container .home-icons li .fa:hover, .home .container-wrap.third .container .home-icons li .fa:hover, .home .container-wrap.fourth .container .home-icons li .fa:hover, .thank-you .container-wrap.second .container .home-icons li .fa:hover, .thank-you .container-wrap.third .container .home-icons li .fa:hover, .thank-you .container-wrap.fourth .container .home-icons li .fa:hover {
-            -webkit-transform: translate(0, -10px);
-            -moz-transform: translate(0, -10px);
-            transform: translate(0, -10px); }
+  .home .container-wrap.second .container small, .home .container-wrap.third .container small, .home .container-wrap.fourth .container small, .thank-you .container-wrap.second .container small, .thank-you .container-wrap.third .container small, .thank-you .container-wrap.fourth .container small {
+    color: white;
+    border-color: white; }
+  .home .container-wrap.second .container h2, .home .container-wrap.third .container h2, .home .container-wrap.fourth .container h2, .thank-you .container-wrap.second .container h2, .thank-you .container-wrap.third .container h2, .thank-you .container-wrap.fourth .container h2 {
+    color: white; }
+  .home .container-wrap.second .container p, .home .container-wrap.third .container p, .home .container-wrap.fourth .container p, .thank-you .container-wrap.second .container p, .thank-you .container-wrap.third .container p, .thank-you .container-wrap.fourth .container p {
+    color: white;
+    text-align: center; }
+  .home .container-wrap.second .container .home-icons, .home .container-wrap.third .container .home-icons, .home .container-wrap.fourth .container .home-icons, .thank-you .container-wrap.second .container .home-icons, .thank-you .container-wrap.third .container .home-icons, .thank-you .container-wrap.fourth .container .home-icons {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .home .container-wrap.second .container .home-icons li, .home .container-wrap.third .container .home-icons li, .home .container-wrap.fourth .container .home-icons li, .thank-you .container-wrap.second .container .home-icons li, .thank-you .container-wrap.third .container .home-icons li, .thank-you .container-wrap.fourth .container .home-icons li {
+      width: 50%;
+      padding: 2% 5%; }
+      .home .container-wrap.second .container .home-icons li:first-child, .home .container-wrap.third .container .home-icons li:first-child, .home .container-wrap.fourth .container .home-icons li:first-child, .thank-you .container-wrap.second .container .home-icons li:first-child, .thank-you .container-wrap.third .container .home-icons li:first-child, .thank-you .container-wrap.fourth .container .home-icons li:first-child {
+        text-align: right; }
+      .home .container-wrap.second .container .home-icons li:last-child, .home .container-wrap.third .container .home-icons li:last-child, .home .container-wrap.fourth .container .home-icons li:last-child, .thank-you .container-wrap.second .container .home-icons li:last-child, .thank-you .container-wrap.third .container .home-icons li:last-child, .thank-you .container-wrap.fourth .container .home-icons li:last-child {
+        text-align: left; }
+      .home .container-wrap.second .container .home-icons li .fa, .home .container-wrap.third .container .home-icons li .fa, .home .container-wrap.fourth .container .home-icons li .fa, .thank-you .container-wrap.second .container .home-icons li .fa, .thank-you .container-wrap.third .container .home-icons li .fa, .thank-you .container-wrap.fourth .container .home-icons li .fa {
+        font-family: FontAwesome;
+        font-size: 7rem;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        color: white; }
+        .home .container-wrap.second .container .home-icons li .fa:hover, .home .container-wrap.third .container .home-icons li .fa:hover, .home .container-wrap.fourth .container .home-icons li .fa:hover, .thank-you .container-wrap.second .container .home-icons li .fa:hover, .thank-you .container-wrap.third .container .home-icons li .fa:hover, .thank-you .container-wrap.fourth .container .home-icons li .fa:hover {
+          -webkit-transform: translate(0, -10px);
+          -moz-transform: translate(0, -10px);
+          transform: translate(0, -10px); }
 
 .home .container-wrap.second, .thank-you .container-wrap.second {
   position: relative;
@@ -286,7 +278,8 @@ p, li {
       display: inline-block;
       padding: 6px 15px;
       letter-spacing: 2px;
-      border: 1px solid; }
+      border: 1px solid;
+      margin: 0 0 10px 0; }
     .body-wrap .container-wrap .container h2 {
       margin: 0; }
     .body-wrap .container-wrap .container p {
@@ -294,28 +287,26 @@ p, li {
       max-width: 768px; }
 
 @media screen and (max-width: 768px) {
-  .body-wrap {
-    margin-bottom: 68px; }
-    .body-wrap .container-wrap {
-      border-bottom: 5px solid #007fbe; }
-      .body-wrap .container-wrap:last-child {
-        border: none; }
-      .body-wrap .container-wrap .container {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -moz-box-orient: vertical;
-        -moz-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        height: auto;
-        padding: 100px 0; }
-        .body-wrap .container-wrap .container .container-left {
-          width: 100%;
-          margin: 0; }
-        .body-wrap .container-wrap .container .container-right {
-          width: 100%; }
-      .body-wrap .container-wrap.first .container {
-        padding: 80px 0 60px 0; } }
+  .body-wrap .container-wrap {
+    border-bottom: 5px solid #007fbe; }
+    .body-wrap .container-wrap:last-child {
+      border: none; }
+    .body-wrap .container-wrap .container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: auto;
+      min-height: -moz-calc(100vh - 150px);
+      min-height: calc(100vh - 150px);
+      padding: 75px 0; }
+      .body-wrap .container-wrap .container .container-left {
+        width: 100%;
+        margin: 0; }
+      .body-wrap .container-wrap .container .container-right {
+        width: 100%; } }
 
 .services.inner .container-wrap {
   background-repeat: no-repeat;
@@ -398,6 +389,19 @@ p, li {
     font-size: 0.85rem;
     line-height: 1rem;
     color: white; }
+
+@media screen and (max-width: 768px) {
+  .work.inner .container-wrap .container .websites, .work.inner .container-wrap .container .emails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 75%; }
+    .work.inner .container-wrap .container .websites a, .work.inner .container-wrap .container .emails a {
+      width: 100%;
+      margin: 5% 0; } }
 
 .contact.inner .container-wrap {
   background-repeat: no-repeat;

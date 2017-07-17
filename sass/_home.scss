@@ -9,14 +9,11 @@
 
             .container {
                 position: relative;
-                height: 100vh;
 
                 .caption-box {
-                    display: none;
                     position: absolute;
-                    max-width: 30%;
-                    bottom: 43%;
-                    right: 0;
+                    max-width: 80%;
+                    bottom: 10%;
                     background-color: rgba(black, 0.5);
                     padding: 20px;
 
@@ -39,8 +36,6 @@
             background-attachment: fixed;
 
             .container {
-                height: 100vh;
-
                 small {
                     color: white;
                     border-color: white;
@@ -148,6 +143,7 @@
         &.first {
             .container {
                 .caption-box {
+                    // display: none;
                     position: absolute;
                     max-width: 100%;
                     bottom: 100px;

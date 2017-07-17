@@ -63,3 +63,21 @@
         }
     }
 }
+
+@media screen and (max-width: $media-tablet) {
+    .work.inner {
+        .container-wrap {
+            .container {
+                .websites, .emails {
+                    flex-direction: column;
+                    width: 75%;
+
+                    a {
+                        width: 100%;
+                        margin: 5% 0;
+                    }
+                }
+            }
+        }
+    }
+}
