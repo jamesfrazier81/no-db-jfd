@@ -9,19 +9,23 @@ html, body {
   html h1, body h1 {
     font-family: "Roboto Slab", serif;
     font-size: 2.75rem;
-    font-weight: 100; }
+    font-weight: 100;
+    margin: 0; }
   html h2, body h2 {
     font-family: "Roboto Slab", serif;
     font-size: 2.75rem;
-    font-weight: 100; }
+    font-weight: 100;
+    margin: 0; }
   html h3, body h3 {
     font-family: "Roboto Slab", serif;
     font-size: 2rem;
-    font-weight: 100; }
+    font-weight: 100;
+    margin: 0; }
   html h4, body h4 {
     font-family: "Roboto Slab", serif;
     font-size: 1.25rem;
-    font-weight: 700; }
+    font-weight: 700;
+    margin: 0; }
   html p, html li, body p, body li {
     font-size: 1rem;
     line-height: 1.75rem;
@@ -68,8 +72,7 @@ html, body {
 
 @media screen and (max-width: 1024px) {
   html h1, html h2, body h1, body h2 {
-    font-size: 2.5rem;
-    line-height: 3rem; }
+    font-size: 2.5rem; }
   html p, body p {
     font-weight: 400; } }
 
@@ -315,7 +318,7 @@ html, body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
-  .services.inner .container-wrap .container h2, .services.inner .container-wrap .container p, .services.inner .container-wrap .container small, .services.inner .container-wrap .container li {
+  .services.inner .container-wrap .container h1, .services.inner .container-wrap .container h2, .services.inner .container-wrap .container p, .services.inner .container-wrap .container small, .services.inner .container-wrap .container li {
     color: white;
     border-color: white; }
   .services.inner .container-wrap.first {
@@ -325,27 +328,19 @@ html, body {
   .services.inner .container-wrap.third {
     background-image: url(/img/dist/bg-services-html5.jpg); }
 
-.about.inner .container-wrap.first {
+.about.inner .container-wrap.first, .about.inner .container-wrap.second {
   background-image: url(/img/dist/bg-about-business.jpg);
   background-repeat: no-repeat;
   -moz-background-size: cover;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
-  .about.inner .container-wrap.first .container h2, .about.inner .container-wrap.first .container p, .about.inner .container-wrap.first .container small {
+  .about.inner .container-wrap.first .container h1, .about.inner .container-wrap.first .container h2, .about.inner .container-wrap.first .container p, .about.inner .container-wrap.first .container small, .about.inner .container-wrap.second .container h1, .about.inner .container-wrap.second .container h2, .about.inner .container-wrap.second .container p, .about.inner .container-wrap.second .container small {
     color: white;
     border-color: white; }
 
 .about.inner .container-wrap.second {
-  background-image: url(/img/dist/bg-about-party.jpg);
-  background-repeat: no-repeat;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed; }
-  .about.inner .container-wrap.second .container h2, .about.inner .container-wrap.second .container p, .about.inner .container-wrap.second .container small {
-    color: white;
-    border-color: white; }
+  background-image: url(/img/dist/bg-about-party.jpg); }
 
 .work.inner .container-wrap {
   background-repeat: no-repeat;
@@ -370,7 +365,7 @@ html, body {
         height: auto; }
   .work.inner .container-wrap.first {
     background-image: url(/img/dist/bg-work-websites.jpg); }
-    .work.inner .container-wrap.first .container h2, .work.inner .container-wrap.first .container p, .work.inner .container-wrap.first .container small, .work.inner .container-wrap.first .container li {
+    .work.inner .container-wrap.first .container h1, .work.inner .container-wrap.first .container h2, .work.inner .container-wrap.first .container p, .work.inner .container-wrap.first .container small, .work.inner .container-wrap.first .container li {
       color: white;
       border-color: white; }
   .work.inner .container-wrap.second {
@@ -410,7 +405,7 @@ html, body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
-  .contact.inner .container-wrap .container h2, .contact.inner .container-wrap .container p, .contact.inner .container-wrap .container small, .contact.inner .container-wrap .container li {
+  .contact.inner .container-wrap .container h1, .contact.inner .container-wrap .container h2, .contact.inner .container-wrap .container p, .contact.inner .container-wrap .container small, .contact.inner .container-wrap .container li {
     color: white;
     border-color: white; }
   .contact.inner .container-wrap.first {
@@ -487,7 +482,7 @@ html, body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
-  .thanks.inner .container-wrap .container h1, .thanks.inner .container-wrap .container p, .thanks.inner .container-wrap .container small, .thanks.inner .container-wrap .container li {
+  .thanks.inner .container-wrap .container h1, .thanks.inner .container-wrap .container h2, .thanks.inner .container-wrap .container p, .thanks.inner .container-wrap .container small, .thanks.inner .container-wrap .container li {
     color: white;
     border-color: white; }
   .thanks.inner .container-wrap .container h1 {
