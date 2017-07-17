@@ -24,7 +24,8 @@ html, body {
     font-weight: 700; }
   html p, html li, body p, body li {
     font-size: 1rem;
-    line-height: 1.75rem; }
+    line-height: 1.75rem;
+    font-weight: 100; }
     html p a, html li a, body p a, body li a {
       text-decoration: none;
       font-weight: 700;
