@@ -95,34 +95,51 @@
 }
 
 // Subnav
-.container-wrap {
-    &.subnav {
-        z-index: 2;
-        position: fixed;
-        top: 0;
+.subnav {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(black, 0.75);
+    border: none;
+    border-bottom: 2px solid $color-blue;
+
+    // Page title
+    .page-title {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        margin: 0;
+        line-height: 60px;
+        color: white;
+        font-size: 0.8rem;
+        width: 60px;
+        height: 60px;
+        background-color: $color-blue;
+        text-align: center;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
         width: 100%;
-        background-color: rgba(black, 0.75);
-        border: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
 
-        ul {
-            display: flex;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-            width: 100%;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-
-            li {
-                a {
-                    display: inline-block;
-                    font-weight: $font-light;
-                    padding: 8px 20px;
-                    font-size: 0.75rem;
-                    color: white;
-                    text-decoration: none;
-                }
+        li {
+            a {
+                display: inline-block;
+                font-weight: $font-light;
+                padding: 8px 20px;
+                font-size: 0.75rem;
+                color: white;
+                text-decoration: none;
             }
         }
     }
@@ -153,6 +170,18 @@
                     display: none;
                 }
             }
+        }
+    }
+
+    // Subnav
+    .container-wrap {
+        // Page title
+        .page-title {
+            line-height: 50px;
+            color: white;
+            width: 50px;
+            height: 50px;
+            font-weight: $font-medium;
         }
     }
 }

@@ -1,13 +1,8 @@
 .work.inner {
     .container-wrap {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
-
         .container {
             .websites, .emails {
-                width: 50%;
+                max-width: 80%;
                 display: flex;
                 flex-wrap: wrap;
 
@@ -64,13 +59,42 @@
     }
 }
 
+@media screen and (max-width: $media-desktop-sm) {
+    .work.inner {
+        .container-wrap {
+            .container {
+                .websites, .emails {
+                    max-width: 90%;
+
+                    a {
+                        width: 45%;
+                        margin: 2%;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: $media-tablet) {
     .work.inner {
         .container-wrap {
             .container {
                 .websites, .emails {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $media-mobile) {
+    .work.inner {
+        .container-wrap {
+            .container {
+                .websites, .emails {
                     flex-direction: column;
-                    width: 75%;
+                    width: 100%;
 
                     a {
                         width: 100%;

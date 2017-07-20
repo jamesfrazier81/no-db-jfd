@@ -1,10 +1,5 @@
 .services.inner {
     .container-wrap {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
-
         .container {
             h1, h2, p, small, li {
                 color: white;
@@ -22,6 +17,28 @@
 
         &.third {
             background-image: url(/img/dist/bg-services-html5.jpg);
+        }
+
+        &.fourth {
+            background-image: url(/img/dist/bg-services-mailchimp.jpg);
+
+            .container {
+                h1, h2, p, small, li {
+                    color: black;
+                    border-color: black;
+                }
+            }
+        }
+
+        &.fifth {
+            background-image: url(/img/dist/bg-services-campaign-monitor.jpg);
+
+            .container {
+                h1, h2, p, small, li {
+                    color: black;
+                    border-color: black;
+                }
+            }
         }
     }
 }

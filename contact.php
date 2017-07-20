@@ -45,16 +45,17 @@
 ?>
 <?php include("includes/header.php"); ?>
 <div class="body-wrap contact inner">
-	<div class="container-wrap subnav">
+	<div class="subnav">
+		<h1 class="page-title">Contact</h1>
 		<ul>
-			<li><a href="#form"></a></li>
-			<li><a href="#paypal"></a></li>
+			<li><a href="#connect">Connect</a></li>
+			<li><a href="#payments">Payments</a></li>
 		</ul>
 	</div>
 	<!-- Section 1 -->
-	<div id="form" class="container-wrap first">
+	<div id="connect" class="container-wrap first">
 		<div class="container column left">
-			<h1>Connect</h1>
+			<h2>Connect</h2>
 			<p>Contact James Frazier Design to get an estimate on your next project. Maybe you need a website.  Maybe it's an email campaign you need structured and built. No matter the stage of your need, I'm here to help you get the best results for the most reasonable price.</p>
 			<div class="contact-form">
 				<form method="post" action="">
@@ -82,7 +83,7 @@
 		</div>
 	</div>
 	<!-- Section 2 -->
-	<div id="paypal" class="container-wrap second">
+	<div id="payments" class="container-wrap second">
 		<div class="container column left">
 			<h2>Payments</h2>
 			<p>Need to pay an invoice? Make an online payment securely through Paypal.</p>

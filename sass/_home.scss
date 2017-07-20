@@ -3,8 +3,6 @@
         &.first {
             z-index: 1;
             background-image: url(/img/dist/james-in-snow.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
             background-position: top center;
 
             .container {
@@ -140,25 +138,15 @@
 
 @media screen and (max-width: $media-desktop-sm) {
     .home .container-wrap {
+        background-size: auto 40%;
+
         &.first {
             .container {
                 .caption-box {
-                    // display: none;
-                    position: absolute;
                     max-width: 100%;
-                    bottom: 100px;
-                    right: 0;
-                    background-color: rgba(black, 0.5);
-                    padding: 20px;
-
-                    h1 {
-                        color: white;
-                        margin: 0;
-                    }
-
-                    p {
-                        color: white;
-                    }
+                    width: 100%;
+                    bottom: 50%;
+                    box-sizing: border-box;
                 }
             }
         }
@@ -188,6 +176,22 @@
                             text-align: center;
                             margin: 0;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $media-mobile) {
+    .home .container-wrap {
+        background-size: auto 30%;
+
+        &.first {
+            .container {
+                .caption-box {
+                    h1 {
+                        font-size: 1.5rem;
                     }
                 }
             }
