@@ -5,7 +5,7 @@
 		<ul>
 			<li><a href="#web-wordpress">WordPress</a></li>
 			<li><a href="#web-html">HTML5</a></li>
-			<li><a href="#email">Email</a></li>
+			<li><a href="#email-mailchimp">Email</a></li>
 		</ul>
 	</div>
 	<!-- Section 1 -->
