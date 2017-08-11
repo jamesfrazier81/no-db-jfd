@@ -108,18 +108,40 @@
     .page-title {
         display: block;
         position: absolute;
-        top: 10px;
-        right: 10px;
+        width: 76px;
+        height: 30px;
+        line-height: 30px;
+        top: 49px;
+        right: 20px;
         margin: 0;
-        line-height: 60px;
         color: white;
         font-size: 0.8rem;
-        width: 60px;
-        height: 60px;
         background-color: $color-blue;
         text-align: center;
-        padding: 10px;
-        border-radius: 50%;
+
+        &:before {
+            position: absolute;
+            left: -20px;
+            top: 0;
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 20px 30px 0;
+            border-color: transparent $color-blue-dark transparent transparent;
+        }
+
+        &:after {
+            position: absolute;
+            right: -20px;
+            top: 0;
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 30px 20px 0 0;
+            border-color: $color-blue-dark transparent transparent transparent;
+        }
     }
 
     ul {
@@ -172,16 +194,21 @@
             }
         }
     }
+}
 
-    // Subnav
-    .container-wrap {
-        // Page title
+@media screen and (max-width: $media-mobile) {
+    .subnav {
         .page-title {
-            line-height: 50px;
-            color: white;
-            width: 50px;
-            height: 50px;
+            top: 46px;
             font-weight: $font-medium;
+
+            &:before {
+                top: 0;
+            }
+
+            &:after {
+                top: 0;
+            }
         }
     }
 }

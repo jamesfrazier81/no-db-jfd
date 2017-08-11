@@ -1,48 +1,3 @@
-<?php
-	if($_POST['submit'] == "Send")
-	{
-		$errorMessage = "";
-		
-		if(empty($_POST['firstname']))
-		{
-			$errorMessage .= "<li>Please enter your first name.</li>";
-		}
-		if(empty($_POST['lastname']))
-		{
-			$errorMessage .= "<li>Please enter your last name.</li>";
-		}
-		if(empty($_POST['email']))
-		{
-			$errorMessage .= "<li>Please enter your email address.</li>";
-		}
-
-		$firstname = $_POST['firstname'];
-		$lastname = $_POST['lastname'];
-		$email = $_POST['email'];
-		$comments = $_POST['comments'];
-
-		// Formatted for email
-		$subject = "Submission from James Frazier Design";
-		$formcontent="From: $firstname $lastname \n Comments: $comments";
-		$recipient = "jamesfrazier81@gmail.com";
-		$subject = "Submission from James Frazier Design";
-		$mailheader = "From: $email \r\n";
-		mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-
-    	mail($to,$subject,$mailheader,$mailmessage);
-
-		if(empty($errorMessage))
-		{
-			$fs = fopen("submissions.csv","a");
-			fwrite($fs,$lastname . ", " . $firstname . ", " . $email . ", " . $comments . "\n");
-			fclose($fs);
-			
-
-			header("Location: thanks.php");
-			exit();
-		}
-	}
-?>
 <?php include("includes/header.php"); ?>
 <div class="body-wrap contact inner">
 	<div class="subnav">
@@ -58,26 +13,28 @@
 			<h2>Connect</h2>
 			<p>Contact James Frazier Design to get an estimate on your next project. Maybe you need a website.  Maybe it's an email campaign you need structured and built. No matter the stage of your need, I'm here to help you get the best results for the most reasonable price.</p>
 			<div class="contact-form">
-				<form method="post" action="">
-					<label for="">First Name<span class="required"><sup>*</sup></span></label>
-					<input type="text" name="firstname" id="form-first">
-					<label for="">Last Name:<span class="required"><sup>*</sup></span></label>
-					<input type="text" name="lastname" id="form-last">
-					<label for="">Email Address<span class="required"><sup>*</sup></span></label>
-					<input type="email" name="email" id="form-email">
-					<label for="">Comments:</label>
-					<textarea name="comments" id="form-comments" rows="5" cols="25"></textarea>
-					<span id="loading"></span>
-					<?php
-						if(!empty($errorMessage))
-						{
-							echo("<div class='error'><p>There was an error with your form:</p>\n");
-							echo("<ul>" . $errorMessage . "</ul>\n");
-							echo("</div>");
-						}
-					?>
-					<input type="submit" name="submit" id="form-submit" value="Send" class="btn btn-blue">
-					<p id="req-field-desc"><span class="required"><sup>*</sup></span> indicates a required field</p>
+				<form method="post" action="contactengine.php">
+					<label for="First">First Name<sup>*</sup></label>
+					<input type="text" name="First" id="first" required>
+
+					<label for="Last">Last Name<sup>*</sup></label>
+					<input type="text" name="Last" id="last" required>
+		
+					<label for="Email">Email<sup>*</sup></label>
+					<input type="email" name="Email" id="Email" required>
+
+					<label for="Phone">Phone</label>
+					<input type="text" name="Phone" id="phone">
+
+					<label for="Organization">Organization Name</label>
+					<input type="text" name="Organization" id="organization">
+					
+					<label for="Message">Message</label><br />
+					<textarea name="Message" rows="5" cols="5" id="Message"></textarea>
+					
+					<!-- <div class="g-recaptcha" data-sitekey="6LfbfBQTAAAAAMgTQpM9LnAFMigFBR7H7wqU91cW"></div> -->
+
+					<input type="submit" name="submit" value="Submit" class="btn btn-blue" />
 				</form>
 			</div>
 		</div>

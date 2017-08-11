@@ -630,19 +630,36 @@ html, body {
   .subnav .page-title {
     display: block;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    width: 76px;
+    height: 30px;
+    line-height: 30px;
+    top: 49px;
+    right: 20px;
     margin: 0;
-    line-height: 60px;
     color: white;
     font-size: 0.8rem;
-    width: 60px;
-    height: 60px;
     background-color: #007fbe;
-    text-align: center;
-    padding: 10px;
-    -moz-border-radius: 50%;
-    border-radius: 50%; }
+    text-align: center; }
+    .subnav .page-title:before {
+      position: absolute;
+      left: -20px;
+      top: 0;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 20px 30px 0;
+      border-color: transparent #026ca0 transparent transparent; }
+    .subnav .page-title:after {
+      position: absolute;
+      right: -20px;
+      top: 0;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 30px 20px 0 0;
+      border-color: #026ca0 transparent transparent transparent; }
   .subnav ul {
     display: -webkit-box;
     display: -moz-box;
@@ -685,10 +702,13 @@ html, body {
       #navbar .navmobile .fa.fa-bars {
         display: inline-block; }
       #navbar .navmobile .fa.fa-times {
-        display: none; }
-  .container-wrap .page-title {
-    line-height: 50px;
-    color: white;
-    width: 50px;
-    height: 50px;
-    font-weight: 300; } }
+        display: none; } }
+
+@media screen and (max-width: 480px) {
+  .subnav .page-title {
+    top: 46px;
+    font-weight: 300; }
+    .subnav .page-title:before {
+      top: 0; }
+    .subnav .page-title:after {
+      top: 0; } }

@@ -18,5 +18,6 @@
 	<meta name="theme-color" content="#ffffff">
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="js/dist/scripts.js"></script>
+	<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 </head>
 <body id="top">
