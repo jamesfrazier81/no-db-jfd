@@ -47,7 +47,7 @@
 		</div>
 	</div>
 	<!-- Section 4 -->
-	<div id="email" class="container-wrap fourth">
+	<div id="email-mailchimp" class="container-wrap fourth">
 		<div class="container left column">
 			<small><i class="fa fa-envelope" aria-hidden="true"></i> Mailchimp Emails</small>
 			<h2>MailChimp HTML Email Templates</h2>
@@ -55,7 +55,7 @@
 		</div>
 	</div>
 	<!-- Section 4 -->
-	<div class="container-wrap fifth">
+	<div id="email-campaign-monitor" class="container-wrap fifth">
 		<div class="container left column">
 			<small><i class="fa fa-envelope" aria-hidden="true"></i> Campaign Monitor Emails</small>
 			<h2>Campaign Monitor HTML Email Templates</h2>
