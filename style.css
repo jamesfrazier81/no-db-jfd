@@ -188,9 +188,8 @@ html, body {
   .home .container-wrap.first .container, .thank-you .container-wrap.first .container {
     position: relative; }
     .home .container-wrap.first .container .caption-box, .thank-you .container-wrap.first .container .caption-box {
-      position: absolute;
       max-width: 80%;
-      bottom: 10%;
+      bottom: 0%;
       background-color: rgba(0, 0, 0, 0.5);
       padding: 20px; }
       .home .container-wrap.first .container .caption-box h1, .thank-you .container-wrap.first .container .caption-box h1 {
@@ -354,17 +353,15 @@ html, body {
 .about.inner .container-wrap.first {
   position: relative; }
   .about.inner .container-wrap.first .container .james-frazier-wrap {
-    width: 100%;
-    position: absolute;
-    bottom: -250px;
-    left: 0;
-    text-align: center; }
+    position: fixed;
+    bottom: 85px;
+    right: 45px; }
     .about.inner .container-wrap.first .container .james-frazier-wrap .james-frazier {
-      width: 500px;
-      height: 500px;
+      width: 250px;
+      height: 250px;
       -moz-border-radius: 50%;
       border-radius: 50%;
-      border: 8px solid #007fbe;
+      border: 2px solid #007fbe;
       text-align: center;
       display: inline-block;
       margin: 0 auto; }
@@ -372,20 +369,13 @@ html, body {
 .about.inner .container-wrap.second {
   background-image: url(/img/dist/bg-about-party.jpg); }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .about.inner .container-wrap.first .container .james-frazier-wrap {
-    bottom: -160px; }
+    bottom: 70px;
+    right: 10px; }
     .about.inner .container-wrap.first .container .james-frazier-wrap .james-frazier {
-      width: 300px;
-      height: 300px;
-      border: 5px solid #007fbe; } }
-
-@media screen and (max-width: 480px) {
-  .about.inner .container-wrap.first .container .james-frazier-wrap {
-    bottom: -125px; }
-    .about.inner .container-wrap.first .container .james-frazier-wrap .james-frazier {
-      width: 200px;
-      height: 200px; } }
+      width: 75px;
+      height: 75px; } }
 
 .work.inner .container-wrap .container .websites, .work.inner .container-wrap .container .emails {
   max-width: 80%;
@@ -543,9 +533,11 @@ html, body {
   border-top: 1px solid white; }
   #navbar .logo {
     width: 200px;
+    height: 47px;
     padding: 10px 20px;
     float: left; }
     #navbar .logo a {
+      height: 47px;
       display: block;
       color: white; }
   #navbar .navlinks {

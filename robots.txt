@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /etb
+Disallow: /acoustics
+Disallow: /psd
+Disallow: /includes
+Disallow: /js
+Disallow: /bower_components
+Disallow: /Error Logs
+Disallow: /Access Logs
+Disallow: /browserconfig.xml
+Disallow: /package.json

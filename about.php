@@ -1,4 +1,12 @@
-<?php include("includes/header.php"); ?>
+<?php
+	$pageTitle = 'James Frazier Design | About';
+	$pageDescription = 'James Frazier Design was established in 2009 as a small business consulting, design and development resource.';
+	$pageCanonical = 'http://jamesfrazierdesign.com/about.php';
+	$pageRobots = 'index, follow';
+	 
+	// Include header file
+	include("includes/header.php"); 
+?>
 <div class="body-wrap about inner">
 	<div class="subnav">
 		<h1 class="page-title">About</h1>

@@ -1,4 +1,13 @@
-<?php include("includes/header.php"); ?>
+<?php
+	$pageTitle = 'James Frazier Design | Contact';
+	$pageDescription = 'Contact James Frazier Design for a custom quote tailored specifically for your website or HTML email project or campaign.';
+	$pageCanonical = 'http://jamesfrazierdesign.com/contact.php';
+	$pageRobots = 'index, follow';
+	 
+	// Include header file
+	include("includes/header.php"); 
+?>
+
 <div class="body-wrap contact inner">
 	<div class="subnav">
 		<h1 class="page-title">Contact</h1>

@@ -1,4 +1,13 @@
-<?php include("includes/header.php"); ?>
+<?php
+	$pageTitle = 'James Frazier Design | Thank You';
+	$pageDescription = 'Thank you for your interest in James Frazier Design.';
+	$pageCanonical = 'http://jamesfrazierdesign.com/thanks.php';
+	$pageRobots = 'noindex, nofollow';
+	 
+	// Include header file
+	include("includes/header.php"); 
+?>
+
 <div class="body-wrap thanks inner">
 	<!-- Section 1 -->
 	<div class="container-wrap first">

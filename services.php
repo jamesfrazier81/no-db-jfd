@@ -1,4 +1,13 @@
-<?php include("includes/header.php"); ?>
+<?php
+	$pageTitle = 'James Frazier Design | Services';
+	$pageDescription = 'James Frazier Design offers customized service options when building your WordPress or static website and MailChimp or Campaign Monitor HTML email templates.';
+	$pageCanonical = 'http://jamesfrazierdesign.com/services.php';
+	$pageRobots = 'index, follow';
+	 
+	// Include header file
+	include("includes/header.php"); 
+?>
+
 <div class="body-wrap services inner">
 	<div class="subnav">
 		<h1 class="page-title">Services</h1>
@@ -42,7 +51,7 @@
 		<div class="container left column">
 			<small><i class="fa fa-html5" aria-hidden="true"></i> HTML5 Websites</small>
 			<h2>HTML5: A Static Solution</h2>
-			<p>Using static HTML to build your site has many benefits including faster load times, no database dependancy and enhanced security. This solution is recommended for clients with minimal HTML and CSS experience.</p>
+			<p>Using static HTML to build your site has many benefits including faster load times, no database dependency and enhanced security. This solution is recommended for clients with minimal HTML and CSS experience.</p>
 			<p>With <a href="https://www.w3schools.com/html/html5_intro.asp" target="_blank">HTML5</a>, you nearly eliminate monthly security updates, giving you more time to make additions to your content. Using standard HTML5 will future-proof your code/site for years to come!</p>
 		</div>
 	</div>

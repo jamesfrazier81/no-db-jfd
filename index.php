@@ -1,4 +1,13 @@
-<?php include("includes/header.php"); ?>
+<?php
+	$pageTitle = 'James Frazier Design | Custom Website and HTML Email Templates';
+	$pageDescription = 'James Frazier Design creates custom WordPress websites and HTML email templates for your favorite email distribution services.';
+	$pageCanonical = 'http://jamesfrazierdesign.com';
+	$pageRobots = 'index, follow';
+	 
+	// Include header file
+	include("includes/header.php"); 
+?>
+
 <div class="body-wrap home">
 	<div class="subnav">
 		<ul>

@@ -1,4 +1,12 @@
-<?php include("includes/header.php"); ?>
+<?php
+	$pageTitle = 'James Frazier Design | Work';
+	$pageDescription = 'The latest examples of web and email work completed by James Frazier Design.';
+	$pageCanonical = 'http://jamesfrazierdesign.com/work.php';
+	$pageRobots = 'index, follow';
+	 
+	// Include header file
+	include("includes/header.php"); 
+?>
 
 <script>
 	$(document).ready(function() {

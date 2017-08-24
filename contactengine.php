@@ -46,6 +46,6 @@ if ($success){
   print "<meta http-equiv=\"refresh\" content=\"0;URL=thanks.php\">";
 }
 else{
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.php\">";
 }
 ?>

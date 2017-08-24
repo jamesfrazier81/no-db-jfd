@@ -1,7 +1,7 @@
 <?php ?>
 <div id="navbar">
 	<div class="logo">
-		<a href="/#top"><?php include("includes/logo-james-frazier-design.php") ?></a>
+		<a href="/"><?php include("includes/logo-james-frazier-design.php") ?></a>
 	</div>
 	<div class="navlinks">
 		<ul>

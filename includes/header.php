@@ -5,7 +5,20 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>James Frazier Design | Custom Websites &amp; HTML Email Templates</title>
+	<title><?php echo $pageTitle; ?></title>
+	<meta name="description" content="<?php echo $pageDescription; ?>">
+	<?php
+		// If canonical URL is specified, include canonical link element
+		if($pageCanonical)
+		{
+			echo '<link rel="canonical" href="' . $pageCanonical . '">';
+		}
+		// If meta robots content is specified, include robots meta tag
+		if($pageRobots)
+		{
+			echo '<meta name="robots" content="' . $pageRobots . '">';
+		}
+	?>
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
 	<link rel="stylesheet" href="bower_components/lightgallery/dist/css/lightgallery.min.css" />
