@@ -8,13 +8,13 @@
 	include("includes/header.php"); 
 ?>
 
-<div class="body-wrap thanks inner">
+<div class="body-wrap error inner">
 	<!-- Section 1 -->
 	<div class="container-wrap first">
 		<div class="container column">
 			<h2>Something went wrong!</h2>
 			<p>Please try filling out the form again after clearing your browser cache.</p>
-			<a href="/contact.php" class="btn btn-blue">Back to Conact <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+			<a href="/contact.php" class="btn btn-blue">Back to Contact <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
 		</div>
 	</div>
 </div>

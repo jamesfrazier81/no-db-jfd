@@ -1,9 +1,15 @@
-<IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
-</IfModule>
+Options -MultiViews
+
+# remove php
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Rewrite to php
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f 
+RewriteRule ^(.+)/?$ /$1.php [L]
+
+ErrorDocument 404 /404.php
 
 <ifModule mod_gzip.c>
 mod_gzip_on Yes

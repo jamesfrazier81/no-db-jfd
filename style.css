@@ -704,3 +704,14 @@ html, body {
       top: 0; }
     .subnav .page-title:after {
       top: 0; } }
+
+.lost.inner .container-wrap.first,
+.error.inner .container-wrap.first {
+  background-image: url(/img/dist/bg-404.jpg); }
+  .lost.inner .container-wrap.first .container h1, .lost.inner .container-wrap.first .container h2, .lost.inner .container-wrap.first .container p, .lost.inner .container-wrap.first .container small,
+  .error.inner .container-wrap.first .container h1,
+  .error.inner .container-wrap.first .container h2,
+  .error.inner .container-wrap.first .container p,
+  .error.inner .container-wrap.first .container small {
+    color: black;
+    border-color: black; }
